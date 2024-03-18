@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Primavero</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a class="navbar-brand" href="#">Floricultura Primavera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" id="btn-principais-produtos" class="btn btn-outline-light" onclick="scrollToSection('principais-produtos-container')">Principais Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="btn-sobre-nos" class="btn btn-outline-light" onclick="scrollToSection('sobre-nos-container')">Sobre nós</a>
+                    </li>
+                </ul>
+            </div>
+                <div class="d-grid gap--2 d-md-flex justify-content-md-end mt--2">
+                    <a href="carrinho.html" class="">
+                        <img src="img/icons8-shopping-cart-96.png" alt="Carrinho de Compras" class="d-block w-5">
+                    </a>
+                </div>
+            </div>
+        </body>
+        </html>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" >
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carrroseul.1.png" alt="Casa 1" class="d-block w-100 carousel-img">
+                    <div class="carousel-caption">
+                        <a href="#" id="btn-principais-produtos" class="btn btn-outline-light" onclick="scrollToSection('principais-produtos-container')">Principais Produtos</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carroseul.2.png" alt="Casa 2" class="d-block w-100 carousel-img">
+                    <div class="carousel-caption">
+                        <a href="#" id="btn-orquideas" class="btn btn-outline-light" onclick="scrollToSection('Orquídeas-container-container')">Orquídeas</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carroseul.3.png" alt="Casa 3" class="d-block w-100 carousel-img">
+                    <div class="carousel-caption">
+                        <a href="#" id="btn-rosas" class="btn btn-outline-light" onclick="scrollToSection('rosas-container')">Rosas</a>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+    
+    <script>
+        // Função para rolar suavemente até a seção especificada
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    
+        // Adicione um manipulador de eventos de clique para o botão "Principais Produtos"
+        document.getElementById('btn-principais-produtos').addEventListener('click', function() {
+            scrollToSection('principais-produtos-container');
+        });
+    
+        // Adicione um manipulador de eventos de clique para o botão "Orquídeas"
+        document.getElementById('btn-orquideas').addEventListener('click', function() {
+            scrollToSection('Orquídeas-container');
+        });
+    
+        // Adicione um manipulador de eventos de clique para o botão "Rosas"
+        document.getElementById('btn-rosas').addEventListener('click', function() {
+            scrollToSection('rosas-container');
+        });
+    </script>
+<div class="container" id="principais-produtos-container">
+    <div class="row mt-5" id="principais-produtos">
+        <div class="col-12 col-md-4">
+            <div class="card text-center" style="background-color: lightcyan;">
+                <img src="img/principais.podutos.1.png" class="card-img-top" alt="Flores Exclusivas" height="400">
+                <div class="card-body">
+                    <h5 class="card-title primary-color">Buquês</h5>
+                    <p class="card-text secondary-color">Descubra nossos Buquês, cuidadosamente montados para você.</p>
+                    <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card text-center">
+                <img src="img/principais.podutos.2.png" class="card-img-top" alt="Plantas Raras" height="400">
+                <div class="card-body" style="background-color: lightcyan;">
+                    <h5 class="card-title primary-color">Decorações</h5>
+                    <p class="card-text secondary-color">Explore nossas maravilhosas opções de decoração para o seu evento.</p> 
+                    <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>                   
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card text-center">
+                <img src="img/principais.podutos.3.png" class="card-img-top" alt="Plantas Raras" height="400">
+                <div class="card-body" style="background-color: lightcyan;">
+                    <h5 class="card-title primary-color">Sementes</h5>
+                    <p class="card-text secondary-color">Diversas sementes, para transformar sua casa, com o nosso toque especial.</p> 
+                    <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="container" id="Orquídeas-container">
+        <div class="row mt-5" id="Orquídeas">
+            <div class="col-12 col-md-4">
+                <div class="card text-center" style="background-color: lightcyan;">
+                    <img src="img/orquidea-1.png" class="card-img-top" alt="Flores Exclusivas"  height="400">
+                    <div class="card-body">
+                        <h5 class="card-title primary-color">Orquídea Cymbidium</h5>
+                        <p class="card-text secondary-color">25,00R$.</p>
+                        <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <img src="img/orquidea-2.png" class="card-img-top" alt="Plantas Raras"  height="400">
+                    <div class="card-body" style="background-color: lightcyan;">
+                        <h5 class="card-title primary-color">Orquídea Rosa</h5>
+                        <p class="card-text secondary-color">20,00R$</p>
+                        <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <img src="img/orquidea-3.png" class="card-img-top" alt="Arranjos Personalizados" height="400">
+                    <div class="card-body" style="background-color: lightcyan;">
+                        <h5 class="card-title primary-color">Orquídea Azul</h5>
+                        <p class="card-text secondary-color">30,00R$</p>
+                        <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="rosas-container">
+        <div class="row mt-5" id="Rosas">
+            <div class="col-12 col-md-4">
+                <div class="card text-center" style="background-color: lightcyan;">
+                    <img src="img/rosas.1.png" class="card-img-top" alt="Flores Exclusivas" height="400">
+                    <div class="card-body">
+                        <h5 class="card-title primary-color">Rosas</h5>
+                        <p class="card-text secondary-color">R$40,00</p>
+                        <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <img src="img/rosas.2.png" class="card-img-top" alt="Plantas Raras" height="400">
+                    <div class="card-body" style="background-color: lightcyan;">
+                        <h5 class="card-title primary-color">Rosas Vermelhas</h5>
+                        <p class="card-text secondary-color">R$35,00</p>
+                        <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card text-center">
+                    <img src="img/rosas.3.png" class="card-img-top" alt="Arranjos Personalizados" height="400">
+                    <div class="card-body" style="background-color: lightcyan;">
+                        <h5 class="card-title primary-color">Rosas Brancas</h5>
+                        <p class="card-text secondary-color">R$45,00</p>
+                        <a href="carrinho.html" class="btn btn-dark">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function adicionarAoCarrinho(id, nome, preco) {
+                    // Obtém ou inicializa o carrinho do localStorage
+                    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+                    
+                    // Adiciona o produto ao carrinho
+                    carrinho.push({ id: id, nome: nome, preco: preco });
+        
+                    // Atualiza o carrinho no localStorage
+                    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        
+                    // Redireciona para a página do carrinho
+                    window.location.href = 'carrinho.html';
+                }
+            </script>
+        </div>
+    </div>
+                <footer class="footer mt-auto py-3 bg-light" id="sobre-nos-container">
+                    <div class="container" id="Sobre nós">
+                        <div class="row">
+                            <div class="col-md-4" height="100">
+                                <h5>Sobre nós</h5>
+                                <p>Na Floricultura Primavera, celebramos a beleza efêmera das flores e a magia que elas trazem para cada momento da vida.</p>
+                                <div class="col-4" id="social-icons">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-youtube"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4"></div>
+
+                            <div class="col-md-4">
+                                <h5>Contato</h5>
+                                <p>Entre em contato conosco:</p>
+                                <ul>
+                                    <li>Email: floricultura@primavera.com</li>
+                                    <li>Telefone: (11) 1111-1111</li>
+                                    <li>WhatsApp: (11) 91111-1111</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <div class="container mt-5" id="tabela-container">
+        <h2 class="text-center text-danger" id="tabela">Carrinho de Compras</h2>
+        <div class="card mt-4">
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Produto</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aqui você pode adicionar os produtos dinamicamente -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Buquês</td>
+                            <td id="precoProduto9">R$75,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal9(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal9(inputQuantidade9) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario9 = 75.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade9.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal9 = precoUnitario9 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto9');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal9.toFixed(2)}`;
+                            }
+                        </script>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Decorações</td>
+                            <td id="precoProduto1">R$1000,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal1(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal1(inputQuantidade1) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario1 = 1000.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade1.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal1 = precoUnitario1 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto1');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal1.toFixed(2)}`;
+                            }
+                        </script>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sementes</td>
+                            <td id="precoProduto2">R$5,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal2(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal2(inputQuantidade2) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario2 = 5.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade2.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal2 = precoUnitario2 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto2');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal2.toFixed(2)}`;
+                            }
+                        </script>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Sementes</td>
+                            <td id="precoProduto3">R$25,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal3(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal3(inputQuantidade3) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario3 = 25.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade3.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal3 = precoUnitario3 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto3');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal3.toFixed(2)}`;
+                            }
+                        </script>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Sementes</td>
+                            <td id="precoProduto4">R$20,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal4(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal4(inputQuantidade4) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario4 = 20.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade4.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal4 = precoUnitario4 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto4');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal4.toFixed(2)}`;
+                            }
+                        </script>
+                            <tr>
+                            <th scope="row">6</th>
+                            <td>Sementes</td>
+                            <td id="precoProduto5">R$30,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal5(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal5(inputQuantidade5) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario5 = 30.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade5.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal5 = precoUnitario5 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto5');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal5.toFixed(2)}`;
+                            }
+                        </script>
+                            <tr>
+                            <th scope="row">7</th>
+                            <td>Sementes</td>
+                            <td id="precoProduto6">R$40,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal6(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal6(inputQuantidade6) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario6 = 40.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade6.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal6 = precoUnitario6 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto6');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal6.toFixed(2)}`;
+                            }
+                        </script>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>Sementes</td>
+                            <td id="precoProduto7">R$35,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal7(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal7(inputQuantidade7) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario7 = 35.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade7.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal7 = precoUnitario7 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto7');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal7.toFixed(2)}`;
+                            }
+                        </script>
+                            <tr>
+                            <th scope="row">9</th>
+                            <td>Sementes</td>
+                            <td id="precoProduto8">R$45,00</td>
+                            <td>
+                                <input type="number" value="1" min="0" max="99" class="form-control" onchange="calcularPrecoTotal8(this)">
+                            </td>
+                        </tr>
+                        <script>
+                            function calcularPrecoTotal8(inputQuantidade2) {
+                                // Obter o preço unitário do produto
+                                const precoUnitario8 = 45.00; // Supondo que o preço unitário seja R$10,00
+                    
+                                // Obter a quantidade selecionada pelo usuário
+                                const quantidade = parseInt(inputQuantidade2.value);
+                    
+                                // Calcular o preço total
+                                const calcularPrecoTotal8 = precoUnitario8 * quantidade;
+                    
+                                // Atualizar o texto do preço total na célula da tabela
+                                const precoProdutoElement = document.getElementById('precoProduto8');
+                                precoProdutoElement.textContent = `R$${calcularPrecoTotal8.toFixed(2)}`;
+                            }
+                        </script>                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Adicione mais itens de carrinho conforme necessário -->
+
+    <script>
+        function calcularPrecoTotal(inputQuantidade) {
+            // Obter o preço unitário do produto
+            const precoUnitario = 10.00; // Supondo que o preço unitário seja R$10,00
+
+            // Obter a quantidade selecionada pelo usuário
+            const quantidade = parseInt(inputQuantidade.value);
+
+            // Calcular o preço total
+            const precoTotal = precoUnitario * quantidade;
+
+            // Atualizar o texto do preço total na célula da tabela
+            const precoProdutoElement = document.getElementById('precoProduto');
+            precoProdutoElement.textContent = `R$${precoTotal.toFixed(2)}`;
+        }
+    </script>
+    <script>
+    function calcularTotalCarrinho() {
+        let totalCarrinho = 0;
+        const linhasProdutos = document.querySelectorAll('tbody tr');
+        linhasProdutos.forEach((linha) => {
+            const precoString = linha.querySelector('td:nth-child(3)').textContent;
+            const preco = parseFloat(precoString.replace('R$', '').replace(',', '.'));
+            totalCarrinho += preco;
+        });
+        alert(`Total do Carrinho: R$${totalCarrinho.toFixed(2)}`);
+    }
+    </script>
+            <div class="mt-4">
+                <button class="btn btn-danger btn-lg btn-block" onclick="calcularTotalCompra()">Finalizar Compra</button>
+            </div>
+        </div>
+    
+        <script>
+            function calcularPrecoTotal(inputQuantidade) {
+                // Código para calcular o preço total de um item individual (mesmo código que você já possui)
+            }
+    
+            function calcularTotalCompra() {
+                let totalCompra = 0;
+    
+                const linhas = document.querySelectorAll('tbody tr');
+                linhas.forEach((linha) => {
+                    const precoTotalTexto = linha.querySelector('td:nth-child(3)').textContent; // Obtém o texto do preço total
+                    const precoTotal = parseFloat(precoTotalTexto.replace('R$', '').replace(',', '.')); // Converte o texto para número
+                    totalCompra += precoTotal; // Soma ao total da compra
+                });
+    
+                alert(`Total da Compra: R$${totalCompra.toFixed(2)}`);
+            }
+        </script>
+</body>
+</html>

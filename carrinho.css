@@ -1,0 +1,58 @@
+body {
+    background-color: pink;
+}
+
+/* Cor de fundo da tabela */
+.card {
+    background-color:#E0B0FF; /* Altere para a cor desejada */
+}
+
+/* Cor do título */
+#tabela {
+    color:#E0B0FF; /* Altere para a cor desejada */
+}
+
+/* Cor dos cabeçalhos das colunas */
+.table thead th {
+    color: solid lightcyan; /* Altere para a cor desejada */
+}
+
+/* Cor do texto nas células da tabela */
+.table tbody tr td {
+    color:solid lightcyan; /* Altere para a cor desejada */
+}
+
+/* Cor do texto nos campos de entrada de quantidade */
+.form-control {
+    color: solid lightcyan; /* Altere para a cor desejada */
+}
+
+/* Cor do texto do botão de quantidade */
+.form-control:focus {
+    color: solid lightcyan; /* Altere para a cor desejada */
+}
+
+/* Cor do texto do botão de quantidade ao passar o mouse */
+.form-control:hover {
+    color: solid lightcyan; /* Altere para a cor desejada */
+}
+
+/* Cor do texto do botão de quantidade quando ativo */
+.form-control:active {
+    color: solid lightcyan; /* Altere para a cor desejada */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
